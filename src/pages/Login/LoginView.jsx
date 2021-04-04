@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
+import { HOME } from "../../navegation/CONSTRAINTS";
 import styles from "./LoginView.module.css"
 export function LoginView({loginUser}){
 
@@ -30,5 +32,8 @@ export function LoginView({loginUser}){
             <button type="submit">Click me to test a login</button>
             <span>Valid is: hola, 12345</span>
         </form>
+        <Link to={HOME}>
+                Go to home
+        </Link>
     </div>
 }

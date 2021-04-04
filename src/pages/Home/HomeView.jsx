@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { LOGIN } from "../../navegation/CONSTRAINTS";
 import NamesContainer from "./components/NamesContainer";
 import styles from "./HomeView.module.css"
 export function HomeView(){
@@ -5,5 +7,8 @@ export function HomeView(){
             <span>Hi!, home here</span>
             <span>Data from redux:</span>
             <NamesContainer/>
+            <Link to={LOGIN}>
+                Go to login
+            </Link>
     </div>
 }
